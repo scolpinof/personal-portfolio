@@ -1,0 +1,215 @@
+:root {
+  --first-color: #fffcf2;
+  --second-color: #ccc5b9;
+  --third-color: #403d39;
+  --alt-color: #252422;
+  --second-alt-color: #eb5e28;
+}
+body {
+  margin: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4rem;
+  z-index: 50;
+  background-color: var(--second-alt-color);
+}
+.logo {
+  width: 4rem;
+}
+.name {
+  color: var(--alt-color);
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-family: "Dancing Script", cursive;
+  text-shadow: -1px -1px 3px #020202, 2px 2px 4px #1b1b1b;
+  font-size: 1.5rem;
+}
+#navbar {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+#navbar ul li {
+  border-left: 0.15rem solid #dd825f;
+}
+#navbar ul li a {
+  font-family: "Signika", sans-serif;
+  text-decoration: none;
+  color: var(--first-color);
+  margin: auto 4rem;
+}
+section {
+  padding-top: 3rem;
+}
+#welcome-section {
+  display: flex;
+  height: 100vh;
+  padding-top: 0;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(40, 4%, 14%, 1)'/><path d='M27.26 5.415c-.55 0-.9.55-.65 1l2.45 4.75c.2.5.85.5 1.15.1l3.15-4.5c.3-.4 0-1.05-.55-1.1zM10.689 8.068c-.406-.051-.822.31-.778.748l.5 5.3c.05.5.6.8 1.05.5l4.55-3.05c.45-.3.4-.95-.05-1.15l-5.1-2.3a.605.605 0 0 0-.172-.048zM2.406 24.584a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm40 0a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm-22.17 3.108a.744.744 0 0 0-.675.723l.4 5.55c.05.5.6.8 1.05.5l4.45-2.95c.45-.25.4-.9-.05-1.15l-4.8-2.6a.702.702 0 0 0-.376-.073z'  stroke-width='1' stroke='none' fill='hsla(34, 6%, 24%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+#welcome-section h1 {
+  margin: auto;
+  color: var(--second-alt-color);
+  font-family: "Passion One", cursive;
+  font-size: 4rem;
+}
+.line {
+  border-top: 1px solid var(--first-color);
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+#about {
+  padding: 3rem 22%;
+  background-color: var(--third-color);
+  color: var(--first-color);
+  font-family: "Signika", sans-serif;
+  text-align: center;
+}
+#about div.line {
+  margin-bottom: 2rem;
+}
+#about a {
+  text-decoration: none;
+  color: var(--first-color);
+  font-size: 2rem;
+}
+#projects {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Signika", sans-serif;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(40, 4%, 14%, 1)'/><path d='M27.26 5.415c-.55 0-.9.55-.65 1l2.45 4.75c.2.5.85.5 1.15.1l3.15-4.5c.3-.4 0-1.05-.55-1.1zM10.689 8.068c-.406-.051-.822.31-.778.748l.5 5.3c.05.5.6.8 1.05.5l4.55-3.05c.45-.3.4-.95-.05-1.15l-5.1-2.3a.605.605 0 0 0-.172-.048zM2.406 24.584a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm40 0a.635.635 0 0 0-.345.081l-4.75 2.4c-.45.2-.5.85-.1 1.15l4.45 3.15c.4.3 1 0 1.1-.5l.3-5.55c0-.412-.31-.712-.655-.73zm-22.17 3.108a.744.744 0 0 0-.675.723l.4 5.55c.05.5.6.8 1.05.5l4.45-2.95c.45-.25.4-.9-.05-1.15l-4.8-2.6a.702.702 0 0 0-.376-.073z'  stroke-width='1' stroke='none' fill='hsla(34, 6%, 24%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  color: var(--second-alt-color);
+}
+h2,
+h3 {
+  text-align: center;
+}
+#projects .project-tile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  color: var(--first-color);
+  padding-bottom: 3rem;
+}
+.project-tile--figure {
+  margin: 1rem auto;
+  width: 30%;
+}
+.project-tile--figure a img {
+  transition: transform 1s;
+  width: 100%;
+  border-radius: 2%;
+}
+.project-tile--figure img:hover {
+  transform: scale(1.5);
+}
+.figure-container {
+  margin: 2rem auto 1rem;
+  overflow: hidden;
+}
+figcaption {
+  text-align: center;
+}
+#skills {
+  background-color: var(--second-color);
+  color: var(--alt-color);
+  padding-bottom: 3rem;
+  font-family: "Signika", sans-serif;
+}
+#skills div.line {
+  border-top: 1px solid var(--alt-color);
+  margin-bottom: 4rem;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10%;
+  grid-template-rows: 3rem 3rem;
+  justify-content: center;
+}
+#skills img {
+  width: 3rem;
+}
+#contact {
+  background-color: var(--alt-color);
+  color: var(--first-color);
+  height: 11rem;
+  font-family: "Signika", sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+#contact div.line {
+  border-top: 1px solid var(--first-color);
+  margin-bottom: 1rem;
+}
+#contact a {
+  color: var(--first-color);
+}
+#contact i {
+  font-size: 1.4rem;
+  margin: 0.4rem;
+}
+@media screen and (max-width: 768px) {
+  #welcome-section h1 {
+    text-align: center;
+  }
+  #navbar ul li a {
+    margin: auto 0.4rem;
+  }
+  #about {
+    padding: 1rem 10%;
+  }
+  #contact {
+    height: 13rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #navbar ul {
+    padding: 0.5rem;
+  }
+  #navbar ul li {
+    border-style: none;
+  }
+  #projects .project-tile {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-tile--figure {
+    margin: 0rem auto;
+    width: 50%;
+  }
+  #skills {
+    padding-bottom: 2rem;
+  }
+  #skills img {
+    width: 1.5rem;
+  }
+  #skills div.line {
+    border-top: 1px solid var(--alt-color);
+    margin-bottom: 1rem;
+  }
+  .skills-grid {
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-template-rows: 1.5rem 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .name {
+    display: none;
+  }
+}
